@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#80ffaa">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="       Welcome to my Game"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_below="@id/txtWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="                 Tic Tac Toe"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
+   <Button
+       android:layout_below="@id/txtName"
+       android:id="@+id/btnSingle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="150dp"
+       android:layout_centerHorizontal="true"
+       android:text="@string/_1_player"
+       android:textColor="#000000"
+       android:background="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSingle"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/_2_player"
+        android:textColor="#000000"
+        android:background="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#000000"
+        android:text="Exit the game"
+        android:background="@color/colorPrimary"/>
+
+
+
+
+</RelativeLayout>
